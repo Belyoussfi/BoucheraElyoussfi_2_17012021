@@ -79,7 +79,63 @@ header{
 }
 
 .Box input[type="submit"]{
+    border: none;
     border-radius: 0 10px 10px 0;
     color: white;
     background-color: #0065FC;
 }
+
+.Filtres{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 25px 0 0 10px;
+}
+
+.Filtres li{
+    list-style: none;
+    margin-right: 5%;
+}
+
+.Filtres .eco{
+    border: #F2F2F2 solid 1px;
+    border-radius: 15px;
+    padding-right: 1.5em;
+    border-left: none;
+    font-weight: bold;
+}
+
+.filtres{
+    font-weight: bold;
+}
+
+.Filtres i{
+    padding: 0.4em;
+    border: solid 1px #F2F2F2;
+    border-radius: 15px;
+    margin-right: 0.8em;
+    color: #0065FC;
+    background-color: #DEEBFF;
+}
+
+.Filtres .eco:hover{
+    background-color: #DEEBFF;
+}
+
+.Information{
+    display: flex;
+    margin: 20px 0 0 10px;
+    align-items: center;
+}
+
+.Information i{
+    margin-right: 5px;
+    border: solid #F2F2F2 1px;
+    background-color: #0065FC;
+    color: white;
+    border-radius: 20px;
+    outline: none;
+}
+
