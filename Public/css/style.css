@@ -197,7 +197,51 @@ header{
     font-size: 0.9em;
 }
 
+/* Ne pas oublier de mettre en couleur bleu les icones*/
+/* Ps: un en ##0065FC et deux en #F2F2F2*/
 .description i{
     margin-bottom: 0.4em;
 }
 
+.description .un{
+    color: #0065FC;
+}
+
+.description .deux{
+    color: #F2F2F2;
+}
+
+.Populaires{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    max-width: 30%;
+}
+
+.Populaires .Titre{
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+}
+
+.Contenu2{
+    display: flex;
+    flex-direction: column;
+}
+
+.Contenu2 article{
+    display: flex;
+    justify-content: flex-start;
+    width: 330px;
+    height: 180px;
+}
+
+.Contenu2 img{
+    width: 130px;
+    height: 100%;
+    object-fit: cover;
+}
+
+.Contenu2 figure{
+    margin: 0;
+}
