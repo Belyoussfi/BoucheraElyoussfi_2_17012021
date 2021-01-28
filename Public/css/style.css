@@ -1,12 +1,13 @@
 body{
-    max-width: 1300px;
+    max-width: 1280px;
     margin: 0;
     padding: 0;
     font-family: 'Raleway';
+    border: green solid 1px;
 }
 
 header{
-    margin: 10px 10px 0 10px;
+    margin: 1.5em;
 }
 
 .logo img{
@@ -35,10 +36,10 @@ header{
 
 .Ancres a:hover{
     border-top: solid 1px #0065FC;
-    padding-top: 25px;
+    padding-top: 2em;
 }
 
-.Ancres a:active{
+.Ancres a:visited{
     color: black;
 }
 
@@ -85,18 +86,23 @@ header{
     background-color: #0065FC;
 }
 
-.Filtres{
+.Filtres ul{
     display: flex;
     justify-content: flex-start;
     align-items: center;
     flex-wrap: wrap;
     padding: 0;
-    margin: 25px 0 0 10px;
+    margin: 2em 1.5em 0 1.5em;
 }
 
 .Filtres li{
     list-style: none;
     margin-right: 5%;
+}
+
+.Filtres a{
+    text-decoration: none;
+    color: black;
 }
 
 .Filtres li:not(.filtres){
@@ -120,128 +126,254 @@ header{
     background-color: #DEEBFF;
 }
 
-.Filtres :not(.filtres):hover{
-    background-color:yellow;
-    padding-right: 20px;
+.Filtres li:not(.filtres):hover{
+    padding-right: 2em;
+    border: solid #0065FC 1px;
 }
 
 .Information{
     display: flex;
-    margin: 20px 0 0 10px;
+    margin: 2em 1.5em 0 1.5em;
     align-items: center;
 }
 
 .Information i{
     margin-right: 5px;
-    border: solid #F2F2F2 1px;
+    border: solid #F2F2F2 2px;
     background-color: #0065FC;
     color: white;
-    border-radius: 20px;
+    border-radius: 1em;
 }
 
 .Hebergements{
-    border: solid #F2F2F2 1px;
-    border-radius: 15px;
-    margin: 25px 0 0 10px;
     display: flex;
     flex-direction: column;
+    border-radius: 0.8em;
+    margin: 0 0 0 1.5em;
     background-color: #F2F2F2;
-    max-width: 60%;
+    padding-left: 1.5em;
 }
 
 .Contenu1{
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    margin: 20px 20px 0 20px;  
 }
 
 .Contenu1 article{
     width: 230px;
-    border: solid 1px #F2F2F2;
-    border-radius: 15px;
-    background-color: white;
-    margin: 0 0 20px 0;
+    padding: 0.3em;
+    border-radius: 0.7em;
+    background-color: white; 
+    margin: 1.5em 1.5em 0 0;
 }
 
 .Contenu1 figure{
     margin: 0;
-    padding: 5px;
 }
 
 .Contenu1 img{
     width: 100%;
-    height: 150px;
+    height: 120px;
     object-fit: cover;
-    border-radius: 15px 15px 0 0;
+    border-radius: 0.7em 0.7em 0 0;
 }
 
 .Hebergements h2{
-    margin: 20px 0 0 20px;
     font-size: 1.2em;
+    margin: 0;
+    padding-top: 1.5em;
 }
 
-.Hebergements .Supplement{
-    margin: 0 0 20px 20px;
+.Hebergements .afficher{
     font-weight: bold;
+    padding: 1.5em 0;
 }
 
 .Contenu1 .description{
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    margin: 0.5em 1em;
 }
 
-.description h3 , p{
+.description h3, p{
     margin: 0;
     font-size: 0.9em;
 }
 
 /* Ne pas oublier de mettre en couleur bleu les icones*/
 /* Ps: un en ##0065FC et deux en #F2F2F2*/
-.description i{
-    margin-bottom: 0.4em;
-}
 
-.description .un{
+.un{
     color: #0065FC;
 }
 
-.description .deux{
+.deux{
     color: #F2F2F2;
 }
 
 .Populaires{
     display: flex;
     flex-direction: column;
-    margin-left: 10px;
-    max-width: 30%;
+    margin: 0 1.5em;
+    background-color: #F2F2F2;
+    border-radius: 0.8em;
+    padding: 0 1.5em;
 }
 
 .Populaires .Titre{
     display: flex;
-    flex-direction: space-between;
+    justify-content: space-between;
     align-items: center;
 }
 
-.Contenu2{
+.Populaires h2{
+    margin: 0;
+    padding-top: 1.5em;
+    font-size: 1.2em;
+}
+
+.Populaires .Contenu2{
     display: flex;
     flex-direction: column;
 }
 
 .Contenu2 article{
     display: flex;
-    justify-content: flex-start;
     width: 330px;
-    height: 180px;
+    padding: 0.3em;
+    border-radius: 0.7em;
+    background-color: white;
+    margin-top: 1.5em;
 }
 
 .Contenu2 img{
     width: 130px;
     height: 100%;
     object-fit: cover;
+    border-radius: 0.7em 0 0 0.7em;
 }
 
-.Contenu2 figure{
+figure{
     margin: 0;
+}
+
+.MainContent{
+    display: flex;
+    margin-top: 2em;
+}
+
+.Contenu2 .description2{
+    margin: 0.5em 1.5em;
+}
+
+.description2 h3,p{
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.description2 i{
+    margin-top: 1.8em;
+}
+
+.Activités{
+    display: flex;
+    flex-direction: column;
+    margin: 2em 0 0 1.5em;
+}
+
+.Activités h2{
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.Contenu3{
+    display: flex;
+    margin-top: 1.5em;
+}
+
+.Contenu3 article{
+    border: solid #F2F2F2 2px;
+    border-radius: 0.9em;
+    width: 290px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.5em;
+}
+
+.Contenu3 img{
+    border-radius: 0.8em 0.8em 0 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+.Contenu3 .Port img{
+    height: 320px;
+}
+
+.Contenu3 .Pomègues img{
+    height: 160px;
+}
+
+.Contenu3 .Frioul img{
+    height: 90px;
+}
+
+.Contenu3 .Calanques img{
+    height: 320px;
+}
+
+.Contenu3 .NotreDame img{
+    height: 110px;
+}
+
+.Contenu3 .Longchamp img{
+    height: 140px;
+}
+
+.Contenu3 .Frioul{
+    margin-top: 1.5em;
+}
+
+.Contenu3 .Longchamp{
+    margin-top: 1.5em;
+}
+
+.Contenu3 h3{
+    margin: 0;
+    font-size: 0.9em;
+    padding: 10px 0 10px 10px;
+}
+
+footer{
+    margin-top: 3em;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    padding: 1.5em;
+}
+
+footer li{
+    list-style: none;
+    line-height: 1.5em;
+    font-size: 0.9em;
+}
+
+footer ul{
+    padding: 0;
+    margin: 0;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+}
+
+footer .hebergements, .Propos{
+    margin-right: 15em;
+}
+
+footer p{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
 }
