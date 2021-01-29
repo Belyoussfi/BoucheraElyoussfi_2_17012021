@@ -51,7 +51,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .Introduction .titre{
@@ -60,7 +59,7 @@ header{
 
 .Box{
     display: flex;
-    margin-top: 2%;
+    margin-top: 2em;
 }
 
 .Box .iconecache{
@@ -149,7 +148,7 @@ header{
     display: flex;
     flex-direction: column;
     border-radius: 0.8em;
-    margin: 0 0 0 1.5em;
+    margin-left: 1.5em;
     background-color: #F2F2F2;
     padding-left: 1.5em;
 }
@@ -167,10 +166,6 @@ header{
     margin: 1.5em 1.5em 0 0;
 }
 
-.Contenu1 figure{
-    margin: 0;
-}
-
 .Contenu1 img{
     width: 100%;
     height: 120px;
@@ -186,7 +181,7 @@ header{
 
 .Hebergements .afficher{
     font-weight: bold;
-    padding: 1.5em 0;
+    padding-top: 1.5em;
 }
 
 .Contenu1 .description{
@@ -223,27 +218,29 @@ header{
 .Populaires .Titre{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
+    padding-top: 1.5em;
 }
 
 .Populaires h2{
     margin: 0;
-    padding-top: 1.5em;
     font-size: 1.2em;
 }
 
 .Populaires .Contenu2{
     display: flex;
     flex-direction: column;
+    margin-top: 1.5em;
 }
 
 .Contenu2 article{
     display: flex;
     width: 330px;
+    height: 130px;
+    margin-bottom: 1.5em;
     padding: 0.3em;
     border-radius: 0.7em;
     background-color: white;
-    margin-top: 1.5em;
 }
 
 .Contenu2 img{
@@ -376,4 +373,96 @@ footer p{
     font-size: 1em;
     font-weight: bold;
     margin-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1276px){
+    .MainContent{
+        flex-flow: row wrap;
+        justify-content: center;
+    }
+
+    .Populaires{
+        margin-top: 2em;
+    }
+
+    .Hebergements{
+        margin-right: 1.5em;
+        align-items: center;
+        padding-bottom: 1.5em;
+    }
+    
+    .Contenu1{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Contenu1 article{
+        width: 250px;
+    }
+
+    .Ancres{
+        margin-right: 10em;
+    }
+
+    .Inscrire{
+        margin-right: 7em;
+    }
+
+    .Filtres li{
+        margin-right: 2em;
+        font-size: 1em;
+    }
+
+    .Contenu3{
+        flex-wrap: wrap;
+    
+    }
+
+    .Contenu3 div{
+        display: flex;
+        
+    }
+
+    .Contenu3 .Calanques{
+        margin-top: 2em;
+    }
+
+    .Contenu3 .Longchamp{
+        height: 180px;
+       
+    }
+
+    .Contenu3 .NotreDame{
+        height: 150px;
+       
+    }
+
+    .Contenu3 .Pomègues{
+        height: 200px;
+        
+    }
+
+    .Contenu3 .Frioul{
+        height: 140px;
+        
+    }
+
+
+
+
+   
+
+    
+
+ 
+
+    
+
+
+
+
+
+
+  
+
 }
