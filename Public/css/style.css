@@ -1,5 +1,5 @@
 body{
-    max-width: 1280px;
+    width: 1280px;
     margin: 0;
     padding: 0;
     font-family: 'Raleway';
@@ -11,7 +11,7 @@ header{
 }
 
 .logo img{
-    max-width: 100%;
+    width: 100%;
 }
 
 .logo{
@@ -377,75 +377,99 @@ footer p{
 
 @media screen and (min-width: 1000px) and (max-width: 1276px){
     .MainContent{
-        flex-flow: row wrap;
-        justify-content: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .Populaires{
         margin-top: 2em;
     }
 
-    .Hebergements{
+    .Populaires .Contenu2{
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+
+    .Contenu2 article{
         margin-right: 1.5em;
+    }
+
+    .Hebergements{
         align-items: center;
         padding-bottom: 1.5em;
+        margin-right: 1.5em;
     }
-    
+
     .Contenu1{
-        flex-wrap: wrap;
         justify-content: center;
     }
-
-    .Contenu1 article{
-        width: 250px;
-    }
-
-    .Ancres{
-        margin-right: 10em;
-    }
-
-    .Inscrire{
-        margin-right: 7em;
-    }
-
+ 
     .Filtres li{
         margin-right: 2em;
-        font-size: 1em;
+        font-size: 0.8em;
     }
 
     .Contenu3{
         flex-wrap: wrap;
-    
+        align-items: center;
+        justify-content: flex-start;
     }
 
     .Contenu3 div{
         display: flex;
-        
+        align-items: center;
     }
 
     .Contenu3 .Calanques{
-        margin-top: 2em;
+        margin-top: 1.5em;
     }
 
-    .Contenu3 .Longchamp{
-        height: 180px;
-       
+    .Introduction .titre{
+        font-size: 1em;
     }
 
-    .Contenu3 .NotreDame{
-        height: 150px;
-       
+    .logo{
+        width: 180px;
     }
+}    
 
-    .Contenu3 .Pomègues{
-        height: 200px;
-        
-    }
+@media screen and (min-width: 769px) and (max-width: 999px){
+    
 
-    .Contenu3 .Frioul{
-        height: 140px;
-        
-    }
+   
+
+    
+
+    
+
+
+
+ 
+  
+
+
+   
+
+ 
+   
+
+    
+
+  
+
+ 
+
+    
+
+  
+   
+
+   
+}
+
+   
+
+  
 
 
 
@@ -465,4 +489,3 @@ footer p{
 
   
 
-}
