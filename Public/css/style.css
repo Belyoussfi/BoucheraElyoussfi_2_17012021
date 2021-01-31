@@ -57,9 +57,12 @@ header{
     font-size: 1.3em;
 }
 
+form{
+    margin-top: 2em;
+}
+
 .Box{
     display: flex;
-    margin-top: 2em;
 }
 
 .Box .iconecache{
@@ -85,11 +88,10 @@ header{
     background-color: #0065FC;
 }
 
-.Filtres ul{
+.Filtres{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    flex-wrap: wrap;
     padding: 0;
     margin: 2em 1.5em 0 1.5em;
 }
@@ -112,8 +114,9 @@ header{
     font-weight: bold;
 }
 
-.filtres{
+.Filtres .filtres{
     font-weight: bold;
+    
 }
 
 .Filtres i{
@@ -190,7 +193,7 @@ header{
     margin: 0.5em 1em;
 }
 
-.description h3, p{
+.description h3{
     margin: 0;
     font-size: 0.9em;
 }
@@ -227,7 +230,7 @@ header{
     font-size: 1.2em;
 }
 
-.Populaires .Contenu2{
+.Contenu2{
     display: flex;
     flex-direction: column;
     margin-top: 1.5em;
@@ -375,97 +378,259 @@ footer p{
     margin-bottom: 0.5em;
 }
 
-@media screen and (min-width: 1000px) and (max-width: 1276px){
+@media screen and (min-width: 741px) and (max-width: 920px){
     .MainContent{
-        display: flex;
         flex-direction: column;
     }
 
-    .Populaires{
-        margin-top: 2em;
-    }
-
-    .Populaires .Contenu2{
-        flex-flow: row wrap;
-        justify-content: space-around;
-    }
-
-    .Contenu2 article{
+    .Hebergements{
         margin-right: 1.5em;
     }
 
-    .Hebergements{
-        align-items: center;
+    .Populaires{
+        margin-top: 1.5em;
+    }
+
+    .Contenu1{
+        justify-content: space-evenly;
+    }
+
+    .Hebergements .afficher{
         padding-bottom: 1.5em;
+    }
+
+    .Contenu2{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Contenu2 article{
+        width: 350px;
+    }
+
+    .Inscrire , .Ancres{
+        font-size: 1.2em;
+    }
+
+    .Ancres{
+        margin-right: 2.5em;
+    }
+
+    .description h3,.description p{
+        font-size: 1.1em;
+    }
+
+    .description2 h3, .description2 p{
+        font-size: 1.1em;
+    }
+
+    .Activités h3{
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 740px){
+    .Menu{
+        flex-direction: column;
+    }
+
+    .Ancres{
+        margin: 1em 0 0 0;
+        align-self: center;
+    }
+
+    .Ancres li{
+        padding: 0 2em;
+        font-size: 1.5em;
+    }
+
+    .Inscrire{
+        margin-top: 1em;
+        font-size: 1.5em;
+    }
+
+    .MainContent{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Populaires{
+        margin-top: 1.5em;
+    }
+
+    .Hebergements{
+        padding-bottom: 1.5em;
+        align-items: center;
         margin-right: 1.5em;
     }
 
     .Contenu1{
         justify-content: center;
     }
- 
-    .Filtres li{
-        margin-right: 2em;
-        font-size: 0.8em;
-    }
 
-    .Contenu3{
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: flex-start;
-    }
-
-    .Contenu3 div{
-        display: flex;
-        align-items: center;
-    }
-
-    .Contenu3 .Calanques{
-        margin-top: 1.5em;
+    footer li, footer p{
+        font-size: 1.2em;
     }
 
     .Introduction .titre{
-        font-size: 1em;
+        font-size: 1.4em;
     }
-
-    .logo{
-        width: 180px;
+    
+    .Filtres li:not(.filtres){
+        border: solid 3px #F2F2F2;
+        font-size: 1.2em;
     }
-}    
-
-@media screen and (min-width: 769px) and (max-width: 999px){
-    
-
-   
-
-    
-
-    
-
-
-
- 
-  
-
-
-   
-
- 
-   
-
-    
-
-  
-
- 
-
-    
-
-  
-   
-
-   
 }
+
+@media screen and (min-width: 321px) and (max-width: 499px){
+    header{
+        margin: 0 3em 0 3em;
+    }
+    .logo{
+        flex-basis: 25%;
+    }
+    .Menu{
+        flex-wrap: wrap;
+    }
+
+    .Ancres{
+        justify-content: space-around;
+        margin: 0;
+        order: 3;
+        width: 100%;
+    }
+
+    .Inscrire{
+        font-size: 3em;
+    }
+
+    .Ancres li{
+        padding: 0;
+    }
+
+    .Ancres a{
+        font-size: 3em;
+    }
+
+    .Ancres a:hover{
+        border-bottom: solid 1px #0065FC;
+        border-top: none;
+    }
+
+    .Introduction{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2em;
+    }
+
+    .Introduction .titre{
+        font-size: 4.7em;
+        margin: 0;
+    }
+
+    .Introduction p{
+        font-size: 2.5em;
+        line-height: 1.5em;
+    }
+
+    form{
+        margin-top: 5em;
+    }
+
+    .Box{
+        border: solid #F2F2F2 3px;
+        border-radius: 2em;
+    }
+
+    .Box .localisation{
+        font-size: 2em;
+        border-radius: 1em 0 0 1em;
+        padding: 1.5em;
+    }
+
+    .Box .iconecache{
+        font-size: 2em;
+        display: flex;
+        padding: 1.5em;
+        border-radius: 1em;
+        background-color: #0065FC;
+        color: white;
+    }
+
+    .Box input[type="text"]{
+        border: none;
+        width: 100%;
+    }
+
+    .Box input[type="submit"]{
+        display: none;
+    }
+
+    .Filtres{
+        margin: 3em 3em 0 3em;
+        flex-flow: row wrap;
+    }
+
+    .Filtres li:not(.filtres){
+        
+        border: solid #F2F2F2 3px;
+        font-size: 3em;
+        margin: 0 1.5em 1.5em 0;
+        border-radius: 2em;
+    }
+
+    .Filtres i{
+        border-radius: 2em;
+    }
+
+    .filtres{
+        flex-basis: 100%;
+        font-size: 3em;
+        margin-bottom: 1.5em;
+    }
+
+    
+
+    
+
+    
+}
+
+   
+
+
+    
+
+   
+
+    
+
+    
+
+
+
+ 
+  
+
+
+   
+
+ 
+   
+
+    
+
+  
+
+ 
+
+    
+
+  
+   
+
+   
+
 
    
 
