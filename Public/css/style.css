@@ -7,6 +7,8 @@ body{
 
 header{
     margin: 1.5em;
+    display: flex;
+    flex-direction: column;
 }
 
 .logo img{
@@ -19,7 +21,7 @@ header{
 
 .Ancres{
     padding-left: 0;
-    display: flex;
+    display:flex;
     margin: 0 0 0 40%;
 }
 
@@ -47,9 +49,9 @@ header{
 }
 
 .Menu{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .Introduction .titre{
@@ -74,10 +76,9 @@ form{
 }
 
 .Box .localisation{
-    border: solid 1px #F2F2F2;
-    border-radius: 10px 0 0 10px;
-    padding: 0.5em;
     background-color: #F2F2F2;
+    border-radius: 10px 0 0 10px;
+    padding: 0.8em;
 }
 
 .Box input[type="submit"]{
@@ -115,7 +116,6 @@ form{
 
 .Filtres .filtres{
     font-weight: bold;
-    
 }
 
 .Filtres i{
@@ -150,7 +150,6 @@ form{
     display: flex;
     flex-direction: column;
     border-radius: 0.8em;
-    margin-left: 1.5em;
     background-color: #F2F2F2;
     padding-left: 1.5em;
 }
@@ -211,7 +210,7 @@ form{
 .Populaires{
     display: flex;
     flex-direction: column;
-    margin: 0 1.5em;
+    margin-left: 1.5em;
     background-color: #F2F2F2;
     border-radius: 0.8em;
     padding: 0 1.5em;
@@ -258,7 +257,6 @@ figure{
 
 .MainContent{
     display: flex;
-    margin-top: 2em;
 }
 
 .Contenu2 .description2{
@@ -271,13 +269,13 @@ figure{
 }
 
 .description2 i{
-    margin-top: 1.8em;
+    margin-top: 3em;
 }
 
 .Activités{
     display: flex;
     flex-direction: column;
-    margin: 2em 0 0 1.5em;
+    margin-top: 2em;
 }
 
 .Activités h2{
@@ -287,16 +285,16 @@ figure{
 
 .Contenu3{
     display: flex;
+    justify-content: space-between;
     margin-top: 1.5em;
 }
 
 .Contenu3 article{
     border: solid #F2F2F2 2px;
     border-radius: 0.9em;
-    width: 290px;
+    width: 285px;
     display: flex;
     flex-direction: column;
-    margin-right: 1.5em;
 }
 
 .Contenu3 img{
@@ -346,12 +344,14 @@ figure{
 main{
     display: flex;
     flex-direction: column;
+    margin: 1.5em;
 }
 
 footer{
     margin-top: 3em;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     background-color: #F2F2F2;
     padding: 1.5em;
 }
@@ -389,7 +389,6 @@ footer p{
     }
 
     .Hebergements{
-        margin-right: 1.5em;
         align-items: center;
     }
 
@@ -410,20 +409,27 @@ footer p{
     }
 }
 
-@media screen and (max-width: 1150px){
-    .Contenu3{
-        flex-wrap: wrap;
+@media screen and (max-width: 1175px){
+    .Contenu3 article{
+        margin-right: 1.5em;
     }
 
-    .Contenu3 .Port{
-        margin-bottom: 1.5em;
+    .Contenu3{
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+
     .Contenu3 div{
         display: flex;
         align-items: center;
     }
 
+    .Contenu3 .Port{
+        margin-bottom: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1150px){
     .Ancres li{
         padding: 0 3em;
     }
@@ -451,9 +457,9 @@ footer p{
     .Contenu3 div{
         flex-direction:column;
     }
-
+    
     .Contenu3{
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
@@ -477,17 +483,29 @@ footer p{
     }
 }
 
-@media screen and (max-width: 661px){
+@media screen and (max-width: 673px){
     .Contenu3 .Frioul{
         margin-bottom: 1.5em;
     }
 
-    .Contenu3 .NotreDame{
-        margin-top: 1.5em;
+    .Contenu3 .Calanques{
+        margin-bottom: 1.5em;
+    }
+
+    .Activités{
+        align-items: center;
+    }
+
+    .Contenu3{
+        justify-content: center;
+    }
+   
+    footer{
+        align-items: flex-start;
     }
 }
 
-@media screen and (min-width: 375px) and (max-width: 500px){
+@media screen and (min-width: 375px) and (max-width: 600px){
     .Menu{
         flex-wrap: wrap;
     }
@@ -554,11 +572,6 @@ footer p{
         align-items: flex-start;
     }
 
-    main{
-        align-items: center;
-        justify-content: center;
-    }
-
     .Hebergements{
         order: 2;
         background-color: white;
@@ -585,8 +598,13 @@ footer p{
         width: 320px;
     }
 
+    .Activités{
+        align-items: flex-start;
+    }
+
     .Contenu3 article{
         width: 320px;
+        margin: 0;
     }
 
     .Contenu3 .Port img{
@@ -611,6 +629,10 @@ footer p{
 
     .Contenu3 .Longchamp img{
         height: 120px;
+    }
+
+    footer{
+        align-items: flex-start;
     }
 
     footer .hebergements{
