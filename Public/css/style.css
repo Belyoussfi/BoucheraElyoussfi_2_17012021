@@ -21,19 +21,16 @@ header{
 }
 
 .Ancres{
-    padding-left: 0;
     display:flex;
     margin: 0 0 0 40%;
 }
 
 .Menu li{
     list-style: none;
-    padding: 0;
-    border: solid blue 1px;
 }
 
-.Ancres li{
-    padding: 0 15%;
+.Inscrire{
+    margin-left: 5%;
 }
 
 .Ancres a, .Inscrire a{
@@ -271,6 +268,7 @@ figure{
 
 .MainContent{
     display: flex;
+    margin: 0 1.5em;
 }
 
 .Contenu2 .description2{
@@ -300,12 +298,13 @@ figure{
 }
 
 .Activités h2{
+    margin-left: 1.5em;
     font-size: 1.2em;
 }
 
 .Contenu3{
+    margin: 1.5em 1.5em 0 1.5em;
     display: flex;
-    margin-top: 1.5em;
 }
 
 .Contenu3 article{
@@ -315,12 +314,6 @@ figure{
     display: flex;
     margin-left: 1.5em;
     flex-direction: column;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    margin: 0 1.5em;
 }
 
 .Contenu3 img{
@@ -405,144 +398,18 @@ footer p{
     margin-bottom: 0.5em;
 }
 
-@media screen and (max-width: 1276px){
-    .MainContent{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Hebergements{
-        align-items: center;
-    }
-
-    .Populaires{
-        margin-top: 1.5em;
-    }
-
-    .Contenu1{
-        justify-content: space-evenly;
-    }
-
-    .Hebergements .afficher{
-        padding-bottom: 1.5em;
-    }
-
-    .Ancres{
-        margin-right: 2.5em;
-    }
-}
-
-@media screen and (max-width: 1175px){
-    .Contenu3 article{
-        margin-right: 1.5em;
-    }
-
-    .Contenu3{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .Contenu3 div{
-        display: flex;
-        align-items: center;
-    }
-
-    .Contenu3 .Port{
-        margin-bottom: 1.5em;
-    }
-}
-
-@media screen and (max-width: 1150px){
-    .Ancres li{
-        padding: 0 3em;
-    }
-
-    .Ancres{
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 1005px){
-    footer .hebergements, .Propos{
-        margin-right: 5em;
-    }
-
-    .Filtres{
-        flex-wrap: wrap;
-    }
-
-    .Filtres li:not(.filtres){
-        margin-bottom: 0.5em;
-    }
-}
-
-@media screen and (max-width: 981px){
-    .Contenu3 div{
-        flex-direction:column;
-    }
-    
-    .Contenu3{
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 730px){
-    .Ancres li{
-        padding: 0 1.5em;
-    }
-
-    .Ancres{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    footer{
-        flex-direction: column;
-    }
-
-    footer .hebergements{
-        align-self: flex-end;
-        margin: 0;
-    }
-}
-
-@media screen and (max-width: 673px){
-    .Contenu3 .Frioul{
-        margin-bottom: 1.5em;
-    }
-
-    .Contenu3 .Calanques{
-        margin-bottom: 1.5em;
-    }
-
-    .Activités{
-        align-items: center;
-    }
-
-    .Contenu3{
-        justify-content: center;
-    }
-   
-    footer{
-        align-items: flex-start;
-    }
-}
-
-@media screen and (min-width: 320px) and (max-width: 600px){
+@media only screen and (max-width: 600px){
     .Menu{
         flex-wrap: wrap;
+        align-items: center
     }
 
     .Ancres{
         flex-basis: 100%;
-        justify-content: space-around;
+        border: solid red 1px; 
         order: 3;
     }
    
-    .Ancres li{
-        padding: 0;
-    }
-
     .Ancres a:hover{
         border-bottom: solid 1px #0065FC;
         border-top: none;
@@ -595,47 +462,82 @@ footer p{
         align-items: flex-start;
     }
 
-    .Hebergements{
-        order: 2;
-        background-color: white;
-        margin:0;
-        align-items: flex-start;
-    }
-
-    .Contenu1{
+    .MainContent{
         flex-direction: column;
-    }
-
-    main{
         margin: 0;
-    }
-
-    .Contenu1 article{
-        border: solid 1px #F2F2F2;
-        width: 300px;
     }
 
     .Populaires{
         order: 1;
         border-radius: 0;
+        padding: 0 1em 1em 1em;
         margin: 0;
     }
 
-    .Activités h2{
-        justify-content: flex-start;
-    }
-
-    .Contenu3 .Port{
-        margin-left: 1.5em;
-    }
-
     .Contenu2 article{
-        width: 300px;
+        width: auto;
+        margin-bottom: 0.5em;
+    }
+
+    .Contenu2 .description2{
+        margin: 0 0 0 0.5em;
+    }
+
+    .Hebergements h2{
+        margin-bottom: 1.5em;
+    }
+
+    .Hebergements{
+        margin: 0.5em 0 0 0;
+        padding: 0 1em;
+        order: 2;
+        background-color: white;
+        border: red solid 1px;
+    }
+
+    .Hebergements .afficher{
+        padding-top: 1em;
+    }
+
+    .Contenu1 article{
+        margin: 0 0 0.5em 0;
+        width: 100%;
+        border: solid #F2F2F2 1px;
+    }
+
+    .Contenu1 .description{
+        margin-left: 0.5em;
+    }
+
+    .Contenu3{
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .Activités h2{
+        margin: 1.5em 0 1.5em 0;
     }
 
     .Contenu3 article{
-        width: 300px;
+        width: auto;
+        margin: 0 0 0.5em 0;
     }
+
+    .Contenu3 .Frioul, .Contenu3 .Longchamp{
+        margin-top: 0;
+    }
+
+    .Activités{
+        margin: 0.5em 0 0 0;
+        padding: 0 1em;
+        border: blue solid 1px;
+    }
+
+  
+
+   
+
+   
 
     .Contenu3 .Port img{
         height: 120px;
@@ -662,12 +564,12 @@ footer p{
     }
 
     footer{
+        flex-direction: column;
         align-items: flex-start;
     }
 
-    footer .hebergements{
-        align-self: flex-start;
-        margin: 1.5em 0;
+    footer .hebergements, .Propos{
+        margin: 0;
     }
 }
 
