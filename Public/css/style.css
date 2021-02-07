@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     font-family: 'Raleway';
-    border: black solid 1px;
 }
 
 header{
@@ -22,15 +21,13 @@ header{
 
 .Ancres{
     display:flex;
-    margin: 0 0 0 40%;
+    padding: 0;
+    margin-left: 40%;
 }
 
-.Menu li{
+.Ancres li{
     list-style: none;
-}
-
-.Inscrire{
-    margin-left: 5%;
+    padding: 0 20%;
 }
 
 .Ancres a, .Inscrire a{
@@ -268,7 +265,7 @@ figure{
 
 .MainContent{
     display: flex;
-    margin: 0 1.5em;
+    margin: 1.5em 1.5em 0 1.5em;
 }
 
 .Contenu2 .description2{
@@ -283,7 +280,7 @@ figure{
 }
 
 .description2 i{
-    margin-top: 2.3em;
+    margin-top: 2.5em;
 }
 
 .description2 p{
@@ -399,42 +396,70 @@ footer p{
 }
 
 @media only screen and (max-width: 600px){
+    header{
+        margin: 0;
+    }
     .Menu{
         flex-wrap: wrap;
-        align-items: center
     }
 
-    .Ancres{
-        flex-basis: 100%;
-        border: solid red 1px; 
-        order: 3;
+    .logo{
+        margin-left: 1em;
     }
-   
+
+    .Inscrire{
+        margin-right: 1em;
+    }
+
     .Ancres a:hover{
-        border-bottom: solid 1px #0065FC;
         border-top: none;
     }
 
+    .Ancres{
+        margin: 0;
+        flex-basis: 100%;
+        justify-content: space-around;
+        order: 3;
+    }
+
+    .Ancres li{
+        padding: 0;
+    }
+   
+    .Ancres:hover{
+        border-bottom: solid 1px #0065FC;
+    }
+
     .Introduction{
-        margin-top: 1.5em;
+        margin: 1em 1em 0 1em;
+    }
+
+    .Introduction .titre{
+        margin: 0 0 0.2em 0;
+    }
+
+    .Introduction p{
+        font-size: 0.9em;
+        margin: 0;
     }
 
     form{
-        margin-top: 2em;
+        margin-top: 1em;
     }
 
     .Box{
         border: solid #F2F2F2 1px;
         border-radius: 0.8em;
+        margin: 0 1em;
     }
 
     .Box .localisation{
-        padding: 1em;
+        padding: 0.7em;
     }
 
     .Box .iconecache{
         display: flex;
-        padding: 1em;
+        padding: 0.7em;
         border-radius: 0.8em;
         background-color: #0065FC;
         color: white;
@@ -449,17 +474,29 @@ footer p{
         display: none;
     }
 
-    .Filtres a{
+    .Filtres{
+        margin: 1em 1em 0 1em;
+        flex-wrap: wrap;
+    }
+
+    .Filtres li:not(.filtres){
+        margin: 0 0.5em 0.5em 0;
         font-size: 0.9em;
     }
-    
+
     .filtres{
-        flex-basis: 100%;
+        width: 100%;
         margin-bottom: 1em;
     }
 
     .Information{
+        margin: 1em;
         align-items: flex-start;
+    }
+
+    .Information P{
+        margin: 0;
+        font-size: 0.8em;
     }
 
     .MainContent{
@@ -492,7 +529,6 @@ footer p{
         padding: 0 1em;
         order: 2;
         background-color: white;
-        border: red solid 1px;
     }
 
     .Hebergements .afficher{
@@ -530,14 +566,7 @@ footer p{
     .Activités{
         margin: 0.5em 0 0 0;
         padding: 0 1em;
-        border: blue solid 1px;
     }
-
-  
-
-   
-
-   
 
     .Contenu3 .Port img{
         height: 120px;
