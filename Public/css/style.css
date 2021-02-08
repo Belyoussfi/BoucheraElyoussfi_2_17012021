@@ -602,6 +602,102 @@ footer p{
     }
 }
 
+@media only screen and (min-width: 600px){
+    .Contenu1{
+        justify-content: center;
+    }
+
+    .Hebergements{
+        align-items: center;
+        margin: 0;
+    }
+
+    .MainContent{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .Populaires{
+        margin: 1em 0 0 0; 
+    }
+
+    .Contenu2{
+        align-items: center;
+    }
+
+    .Activités{
+        margin-top: 1em;
+    }
+
+    .Contenu3{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .Contenu3 article{
+        width: 230px;
+    }
+
+    .Contenu3 .Calanques{
+        margin: 1.5em 0 0 0;
+    }
+
+    .Contenu3 .NotreDame{
+        margin-top: 1.5em;
+    }
+
+    .Filtres{
+        flex-wrap: wrap;
+        margin-top: 1em;
+    }
+
+    .filtres{
+        flex-basis: 100%;
+    }
+
+    .Filtres li:not(.filtres){
+        margin-top: 1em;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .hebergements, .Propos{
+        margin: 0;
+    }
+
+    .Introduction{
+        margin-bottom: 1em;
+    }
+
+    .Box{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form{
+        margin-top: 0;
+    }
+
+    .Information{
+        margin-top: 1em;
+    }
+
+    .Menu{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .Ancres{
+        justify-content: space-around;
+        width: 100%;
+        order: 3;
+        margin: 0;
+    }
+}
+
    
 
 
