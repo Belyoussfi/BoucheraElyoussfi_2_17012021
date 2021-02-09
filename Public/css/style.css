@@ -395,6 +395,154 @@ footer p{
     margin-bottom: 0.5em;
 }
 
+@media only screen and (min-width: 600px){
+    .Contenu1{
+        justify-content: center;
+    }
+
+    .Hebergements{
+        align-items: center;
+    }
+
+    .MainContent{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .Populaires{
+        margin: 1em 0 0 0; 
+    }
+
+    .Contenu2{
+        align-items: center;
+    }
+
+    .Activités{
+        margin-top: 1em;
+        align-items: center;
+    }
+
+    .Contenu3{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Contenu3 .Pomègues{
+        margin: 1.5em 0 0 0;
+    }
+
+    .Contenu3 .Longchamp{
+        margin-left: 0;
+    }
+
+    .Contenu3 .Frioul{
+        margin: 1.5em 0 0 0;
+    }
+
+    .Contenu3 .NotreDame{
+        margin: 1.5em 0 0 0;
+    }
+
+    .Contenu3 .Calanques{
+        margin: 1.5em 0 0 0;
+    }
+
+    .filtres{
+        align-self: center;
+        margin-bottom: 1em;
+    }
+
+    .Filtres{
+        flex-wrap: wrap;
+    }
+
+    .Filtres li:not(.filtres){
+        margin-bottom: 1em;
+    }
+
+    footer{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    footer .hebergements, .Propos{
+        margin: 0;
+    }
+
+    .Introduction{
+        margin-bottom: 1em;
+    }
+
+    .Box{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    form{
+        margin-top: 0;
+    }
+
+    .Information{
+        margin-top: 1em;
+    }
+
+    .Menu{
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .Ancres{
+        justify-content: space-around;
+        width: 100%;
+        order: 3;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .Contenu2{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .Activités{
+        align-items: center;
+    }
+
+    .Contenu3{
+        justify-content: center;
+    }
+
+    .Contenu3 .Calanques{
+        margin: 1.5em 1.5em 0 0;
+    }
+
+    .Contenu3 .Port{
+        margin-right: 1.5em;
+    }
+
+    .Contenu3 .Pomègues{
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 992px){
+    .Contenu3{
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .Contenu3 .NotreDame, .Contenu3 .Longchamp{
+        margin-left: 0;
+    }
+
+    .Filtres li:not(.filtres){
+        margin-top: 0;
+        margin-bottom: 0.5em;
+    }
+}
+
 @media only screen and (max-width: 600px){
     header{
         margin: 0;
@@ -602,101 +750,9 @@ footer p{
     }
 }
 
-@media only screen and (min-width: 600px){
-    .Contenu1{
-        justify-content: center;
-    }
 
-    .Hebergements{
-        align-items: center;
-        margin: 0;
-    }
 
-    .MainContent{
-        flex-direction: column;
-        margin: 0;
-    }
 
-    .Populaires{
-        margin: 1em 0 0 0; 
-    }
-
-    .Contenu2{
-        align-items: center;
-    }
-
-    .Activités{
-        margin-top: 1em;
-    }
-
-    .Contenu3{
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    .Contenu3 article{
-        width: 230px;
-    }
-
-    .Contenu3 .Calanques{
-        margin: 1.5em 0 0 0;
-    }
-
-    .Contenu3 .NotreDame{
-        margin-top: 1.5em;
-    }
-
-    .Filtres{
-        flex-wrap: wrap;
-        margin-top: 1em;
-    }
-
-    .filtres{
-        flex-basis: 100%;
-    }
-
-    .Filtres li:not(.filtres){
-        margin-top: 1em;
-    }
-
-    footer{
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    footer .hebergements, .Propos{
-        margin: 0;
-    }
-
-    .Introduction{
-        margin-bottom: 1em;
-    }
-
-    .Box{
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-
-    form{
-        margin-top: 0;
-    }
-
-    .Information{
-        margin-top: 1em;
-    }
-
-    .Menu{
-        flex-wrap: wrap;
-        align-items: center;
-    }
-
-    .Ancres{
-        justify-content: space-around;
-        width: 100%;
-        order: 3;
-        margin: 0;
-    }
-}
 
    
 
