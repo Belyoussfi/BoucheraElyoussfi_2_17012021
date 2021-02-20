@@ -1,7 +1,6 @@
 body{
     max-width: 1280px;
-    margin: 0;
-    padding: 0;
+    margin: 0 auto;
     font-family: 'Raleway';
 }
 
@@ -128,8 +127,8 @@ form{
 }
 
 .Filtres li:not(.filtres):hover{
-    padding-right: 2em;
-    border: solid #0065FC 1px;
+    background-color: #DEEBFF;
+    padding-right: 3em;
 }
 
 .Information{
