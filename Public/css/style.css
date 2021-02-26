@@ -39,7 +39,7 @@ header{
     padding-top: 2em;
 }
 
-.Ancres a:active{
+.Ancres a:link{
     color: black;
 }
 
